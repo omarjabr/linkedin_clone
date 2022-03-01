@@ -1,0 +1,37 @@
+.app__header {
+  display: flex;
+}
+
+.app__header_left {
+  display: flex;
+  align-items: center;
+}
+
+.app__header_left > img {
+  object-fit: contain;
+  max-height: 42px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.app__header_search {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  border-radius: 5px;
+  color: gray;
+  background-color: #eef3f8;
+  padding: 10px 20px;
+}
+
+.app__header_search > input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 16px;
+  color: #1f1f1f;
+}
+
+.app__header_right {
+  display: flex;
+}
