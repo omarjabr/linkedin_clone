@@ -4,4 +4,22 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  padding: 0 20px;
+  color: gray;
+}
+
+.app__headerMenu:hover {
+  color: #1f1f1f;
+  transition: 0.3s ease-in-out;
+}
+
+.app__headerMenu_icon {
+  width: 26px !important;
+  height: 26px !important;
+}
+
+.app__headerMenu_title {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0;
 }

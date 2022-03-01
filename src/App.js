@@ -1,16 +1,16 @@
 import React from "react";
-import { Header } from "./containers";
+import { Header, Sidebar, Feed, Widgets } from "./containers";
 import "./App.css";
 
 const App = () => {
   return (
     <div className="app">
-      {/* Header */}
       <Header />
-      {/* App Body */}
-      {/* Sidebar */}
-      {/* Feed */}
-      {/* Widgets */}
+      <div className="app__body">
+        <Sidebar />
+        <Feed />
+        <Widgets />
+      </div>
     </div>
   );
 };

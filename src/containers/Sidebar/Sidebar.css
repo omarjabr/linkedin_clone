@@ -1,0 +1,5 @@
+.app__sidebar {
+  display: flex;
+  flex: 0.2;
+  justify-content: center;
+}

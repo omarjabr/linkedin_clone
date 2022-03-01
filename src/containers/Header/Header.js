@@ -3,6 +3,11 @@ import {
   SearchRounded,
   HomeRounded,
   HomeRepairServiceRounded,
+  PeopleAltRounded,
+  SendRounded,
+  NotificationsRounded,
+  AccountCircleRounded,
+  AppsRounded,
 } from "@mui/icons-material";
 import "./Header.css";
 import { HeaderMenu } from "../../components";
@@ -10,11 +15,27 @@ import { HeaderMenu } from "../../components";
 const navMenuList = [
   {
     title: "Home",
-    icon: <HomeRounded />,
+    icon: HomeRounded,
   },
   {
-    title: "Job",
-    icon: <HomeRepairServiceRounded />,
+    title: "My Network",
+    icon: PeopleAltRounded,
+  },
+  {
+    title: "Jobs",
+    icon: HomeRepairServiceRounded,
+  },
+  {
+    title: "Messaging",
+    icon: SendRounded,
+  },
+  {
+    title: "Notifications",
+    icon: NotificationsRounded,
+  },
+  {
+    title: "Me",
+    icon: AccountCircleRounded,
   },
 ];
 
@@ -32,11 +53,11 @@ const Header = () => {
         </div>
       </div>
       <div className="app__header_right">
-        {/* {navMenuList.map((item, index) => (
+        {navMenuList.map((item, index) => (
           <HeaderMenu key={index} Icon={item.icon} title={item.title} />
-        ))} */}
-        <HeaderMenu Icon={HomeRounded} title="Home" />
-        <HeaderMenu Icon={HomeRepairServiceRounded} title="Job" />
+        ))}
+        <span className="app__header_separator" />
+        <HeaderMenu Icon={AppsRounded} title="Work" />
       </div>
     </div>
   );

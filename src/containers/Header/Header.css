@@ -1,5 +1,11 @@
 .app__header {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 0.2px solid lightgray;
+  background-color: #fff;
+  z-index: 999;
 }
 
 .app__header_left {
@@ -9,7 +15,7 @@
 
 .app__header_left > img {
   object-fit: contain;
-  max-height: 42px;
+  max-height: 34px;
   margin: 0 10px;
   cursor: pointer;
 }
@@ -21,17 +27,29 @@
   border-radius: 5px;
   color: gray;
   background-color: #eef3f8;
-  padding: 10px 20px;
+  padding: 5px 12px;
 }
 
 .app__header_search > input {
   border: none;
   outline: none;
   background: none;
-  font-size: 16px;
+  font-size: 14px;
   color: #1f1f1f;
 }
 
 .app__header_right {
   display: flex;
+}
+
+.app__header_separator {
+  content: " ";
+  width: 1px;
+  background-color: lightgray;
+}
+
+@media screen and (max-width: 920px) {
+  .app__header_right {
+    display: none;
+  }
 }
