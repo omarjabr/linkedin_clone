@@ -10,15 +10,16 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: #fff;
+  border: 0.1px solid lightgray;
+  margin-bottom: 10px;
 }
 
 .app__sidebar_section-1 {
   display: flex;
   flex-direction: column;
   flex: 1;
-
   align-items: center;
   padding-bottom: 15px;
   border-bottom: 0.3px solid lightgray;
@@ -51,6 +52,7 @@
 
 .app__sidebar_section-2 {
   padding: 15px 0;
+  border-bottom: 0.3px solid lightgray;
 }
 
 .app__sidebar_section-row {
@@ -74,4 +76,60 @@
   font-size: 12px;
   font-weight: 600;
   color: #378fe9;
+}
+
+.app__sidebar_section-3 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 15px 12px;
+  cursor: pointer;
+}
+
+.app__sidebar_section-3:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+.app__sidebar_section-3 > p {
+  font-size: 14px;
+  font-weight: 600;
+  color: gray;
+}
+
+.app__sidebar_section-icon {
+  color: gray;
+}
+
+.app__sidebar_bottom {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 0.1px solid lightgray;
+}
+
+.app__sidebar_section-4 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 12px 10px;
+  border-bottom: 0.3px solid lightgray;
+}
+
+.app__sidebar_section-5 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  padding: 12px 10px;
+  cursor: pointer;
+}
+
+.app__sidebar_section-5:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+.app__sidebar_section-5 > p {
+  color: gray;
 }

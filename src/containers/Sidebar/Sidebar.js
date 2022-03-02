@@ -1,6 +1,6 @@
 import React from "react";
 
-import { AccountCircleRounded } from "@mui/icons-material";
+import { AccountCircleRounded, BookmarkRounded } from "@mui/icons-material";
 import "./Sidebar.css";
 
 const Sidebar = () => {
@@ -25,6 +25,19 @@ const Sidebar = () => {
             <p>Connections</p>
             <span>100</span>
           </div>
+        </div>
+        <div className="app__sidebar_section-3">
+          <BookmarkRounded className="app__sidebar_section-icon" />
+          <p>My items</p>
+        </div>
+      </div>
+      <div className="app__sidebar_bottom">
+        <div className="app__sidebar_section-4">
+          <p>Recent</p>
+        </div>
+
+        <div className="app__sidebar_section-5">
+          <p>Discover more</p>
         </div>
       </div>
     </div>
