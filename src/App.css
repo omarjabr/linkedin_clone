@@ -1,4 +1,11 @@
 .app__body {
   display: flex;
-  padding: 10px 110px;
+  padding: 20px 90px;
+  gap: 30px;
+}
+
+@media screen and (max-width: 920px) {
+  .app__body {
+    flex-direction: column;
+  }
 }

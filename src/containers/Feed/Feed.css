@@ -1,5 +1,6 @@
 .app__feed {
   display: flex;
-  flex: 0.6;
+  flex: 0.54;
   justify-content: center;
+  background-color: lightcoral;
 }
