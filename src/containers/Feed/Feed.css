@@ -1,6 +1,13 @@
 .app__feed {
   display: flex;
   flex: 0.54;
-  justify-content: center;
   background-color: lightcoral;
+}
+
+.app__feed_top {
+  display: flex;
+  /* flex: 1; */
+  border-radius: 10px;
+  background-color: #fff;
+  border: 0.1px solid lightgray;
 }

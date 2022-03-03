@@ -64,7 +64,7 @@
 }
 
 .app__sidebar_section-row:hover {
-  background-color: rgb(226, 226, 226);
+  background-color: whitesmoke;
 }
 
 .app__sidebar_section-row > p {
@@ -84,16 +84,16 @@
   gap: 5px;
   padding: 15px 12px;
   cursor: pointer;
+  border-radius: 0 0 10px 10px;
 }
 
 .app__sidebar_section-3:hover {
-  background-color: rgb(226, 226, 226);
+  background-color: whitesmoke;
 }
 
 .app__sidebar_section-3 > p {
   font-size: 14px;
   font-weight: 600;
-  color: gray;
 }
 
 .app__sidebar_section-icon {
@@ -113,8 +113,36 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 12px 10px;
+  padding: 10px 0 15px 0;
   border-bottom: 0.3px solid lightgray;
+}
+
+.app__sidebar_section-title {
+  font-size: 12px;
+  padding: 5px 12px;
+}
+
+.app__sidebar_recent-collection {
+  display: flex;
+  align-items: center;
+  color: gray;
+  padding: 2px 15px;
+  cursor: pointer;
+}
+
+.app__sidebar_recent-collection:hover {
+  background-color: whitesmoke;
+}
+
+.app__sidebar_recent-collection > span {
+  font-weight: 700;
+  font-size: 18px;
+  padding: 0 5px;
+}
+
+.app__sidebar_recent-collection > p {
+  font-size: 12px;
+  padding: 0 5px;
 }
 
 .app__sidebar_section-5 {
@@ -122,14 +150,30 @@
   flex-direction: column;
   flex: 1;
   align-items: center;
+  border-radius: 0 0 10px 10px;
   padding: 12px 10px;
   cursor: pointer;
 }
 
 .app__sidebar_section-5:hover {
-  background-color: rgb(226, 226, 226);
+  background-color: whitesmoke;
 }
 
 .app__sidebar_section-5 > p {
   color: gray;
+}
+
+@media screen and (max-width: 920px) {
+  .app__sidebar_section-1 {
+    border: none;
+  }
+  .app__sidebar_section-2 {
+    display: none;
+  }
+  .app__sidebar_section-3 {
+    display: none;
+  }
+  .app__sidebar_bottom {
+    display: none;
+  }
 }

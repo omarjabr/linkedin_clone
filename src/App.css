@@ -7,5 +7,6 @@
 @media screen and (max-width: 920px) {
   .app__body {
     flex-direction: column;
+    padding: 20px 70px;
   }
 }

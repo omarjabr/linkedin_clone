@@ -3,6 +3,14 @@ import React from "react";
 import { AccountCircleRounded, BookmarkRounded } from "@mui/icons-material";
 import "./Sidebar.css";
 
+const recentCollection = [
+  "middleeast",
+  "customerrelations",
+  "consultants",
+  "mysql",
+  "operatingsystems",
+];
+
 const Sidebar = () => {
   return (
     <div className="app__sidebar">
@@ -33,7 +41,13 @@ const Sidebar = () => {
       </div>
       <div className="app__sidebar_bottom">
         <div className="app__sidebar_section-4">
-          <p>Recent</p>
+          <p className="app__sidebar_section-title">Recent</p>
+          {recentCollection.map((item, index) => (
+            <div className="app__sidebar_recent-collection" key={index}>
+              <span>#</span>
+              <p>{item}</p>
+            </div>
+          ))}
         </div>
 
         <div className="app__sidebar_section-5">
