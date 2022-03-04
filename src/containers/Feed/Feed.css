@@ -1,13 +1,56 @@
 .app__feed {
   display: flex;
   flex: 0.54;
-  background-color: lightcoral;
+  flex-direction: column;
 }
 
 .app__feed_top {
   display: flex;
-  /* flex: 1; */
+  flex-direction: column;
   border-radius: 10px;
+  padding: 10px 15px;
   background-color: #fff;
   border: 0.1px solid lightgray;
+}
+
+.app__feed_form {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.app__feed_top-avatar {
+  width: 55px !important;
+  height: 55px !important;
+  margin-right: 5px;
+  color: gray;
+}
+
+.app__feed_form-container {
+  flex: 1;
+  padding: 15px 20px;
+  background-color: whitesmoke;
+  border-radius: 35px;
+  border: 0.3px solid lightgray;
+}
+
+.app__feed_top > form {
+  display: flex;
+  flex: 1;
+}
+
+.app__feed_top-input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 16px;
+  width: 100%;
+}
+
+.app__feed_top-button {
+  display: none;
+}
+
+.app__feed-options {
+  display: flex;
 }

@@ -2,9 +2,9 @@
   position: sticky;
   top: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 5px 0;
+  padding: 5px 100px;
   border-bottom: 0.2px solid lightgray;
   background-color: #fff;
   z-index: 999;
@@ -13,6 +13,7 @@
 .app__header_left {
   display: flex;
   align-items: center;
+  flex: 0.7;
 }
 
 .app__header_left > img {
@@ -24,6 +25,7 @@
 
 .app__header_search {
   display: flex;
+  flex: 1;
   gap: 5px;
   align-items: center;
   border-radius: 5px;
@@ -36,6 +38,7 @@
   border: none;
   outline: none;
   background: none;
+  width: 100%;
   font-size: 14px;
   color: #1f1f1f;
 }
