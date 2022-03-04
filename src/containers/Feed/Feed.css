@@ -53,4 +53,7 @@
 
 .app__feed-options {
   display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  align-items: center;
 }

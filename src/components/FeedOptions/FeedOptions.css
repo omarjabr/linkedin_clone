@@ -1,3 +1,14 @@
-app__feedOptions {
+.app__feedOptions {
   display: flex;
+  padding: 13px 8px;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.app__feedOptions:hover {
+  background-color: whitesmoke;
+}
+
+.app__feedOptions_title {
+  color: gray;
 }

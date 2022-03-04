@@ -1,9 +1,38 @@
 import React from "react";
 
-import { AccountCircleRounded } from "@mui/icons-material";
+import {
+  AccountCircleRounded,
+  PhotoSizeSelectActualRounded,
+  VideoCallRounded,
+  EventAvailableRounded,
+  ArticleRounded,
+} from "@mui/icons-material";
 import { FeedOptions } from "../../components";
 
 import "./Feed.css";
+
+const feedOptionsList = [
+  {
+    title: "Photo",
+    icon: PhotoSizeSelectActualRounded,
+    color: "#70b5f9",
+  },
+  {
+    title: "Video",
+    icon: VideoCallRounded,
+    color: "#7fc15e",
+  },
+  {
+    title: "Event",
+    icon: EventAvailableRounded,
+    color: "#e7a33e",
+  },
+  {
+    title: "Write article",
+    icon: ArticleRounded,
+    color: "#fc9295",
+  },
+];
 
 const Feed = () => {
   return (
@@ -25,7 +54,14 @@ const Feed = () => {
           </div>
         </div>
         <div className="app__feed-options">
-          <FeedOptions title="Photo" />
+          {feedOptionsList.map((item, index) => (
+            <FeedOptions
+              key={index}
+              Icon={item.icon}
+              title={item.title}
+              color={item.color}
+            />
+          ))}
         </div>
       </div>
     </div>
