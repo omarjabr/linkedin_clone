@@ -1,0 +1,7 @@
+.app__posts {
+  display: flex;
+  background-color: #fff;
+  border: 0.1px solid lightgray;
+  border-radius: 10px;
+  padding: 10px 15px;
+}

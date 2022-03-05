@@ -6,8 +6,9 @@ import {
   VideoCallRounded,
   EventAvailableRounded,
   ArticleRounded,
+  ArrowDropDownRounded,
 } from "@mui/icons-material";
-import { FeedOptions } from "../../components";
+import { FeedOptions, Posts } from "../../components";
 
 import "./Feed.css";
 
@@ -63,6 +64,16 @@ const Feed = () => {
             />
           ))}
         </div>
+      </div>
+      <div className="app__feed_divider">
+        <span></span>
+        <p>
+          Sort by: <span>Top</span>
+        </p>
+        <ArrowDropDownRounded />
+      </div>
+      <div className="app__feed_bottom">
+        <Posts />
       </div>
     </div>
   );

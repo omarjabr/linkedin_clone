@@ -57,3 +57,34 @@
   margin-top: 5px;
   align-items: center;
 }
+
+.app__feed_divider {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.app__feed_divider > span {
+  content: " ";
+  flex: 1;
+  height: 1px;
+  margin-right: 10px;
+  background-color: lightgray;
+}
+
+.app__feed_divider > p {
+  color: gray;
+  font-size: 12px;
+}
+
+.app__feed_divider > p > span {
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.app__feed_bottom {
+  display: flex;
+  flex-direction: column;
+}
