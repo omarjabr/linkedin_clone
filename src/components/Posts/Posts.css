@@ -1,7 +1,27 @@
 .app__posts {
   display: flex;
+  flex-direction: column;
   background-color: #fff;
   border: 0.1px solid lightgray;
   border-radius: 10px;
   padding: 10px 15px;
+}
+
+.app__posts_top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__posts_account {
+  display: flex;
+}
+
+.app__posts_time {
+  display: flex;
+  align-items: center;
+}
+
+.app__posts_account-details {
+  font-size: 14px;
+  color: gray;
 }

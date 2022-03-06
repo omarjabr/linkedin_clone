@@ -42,7 +42,7 @@ const Feed = () => {
         <div className="app__feed_form">
           <AccountCircleRounded className="app__feed_top-avatar" />
           <div className="app__feed_form-container">
-            <form action="" method="post">
+            <form>
               <input
                 type="text"
                 name="post"
@@ -50,7 +50,9 @@ const Feed = () => {
                 className="app__feed_top-input"
                 placeholder="Start a post"
               />
-              <button type="submit" className="app__feed_top-button"></button>
+              <button type="submit" className="app__feed_top-button">
+                Send
+              </button>
             </form>
           </div>
         </div>
