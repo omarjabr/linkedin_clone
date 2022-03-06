@@ -16,12 +16,29 @@
   display: flex;
 }
 
+.app__posts_account-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .app__posts_time {
   display: flex;
   align-items: center;
+  gap: 3px;
 }
 
 .app__posts_account-details {
-  font-size: 14px;
+  font-size: 12px;
   color: gray;
+}
+
+.app__posts_content {
+  margin: 15px 0;
+}
+
+.app__posts_options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  align-items: center;
 }
