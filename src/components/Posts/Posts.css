@@ -34,6 +34,7 @@
 
 .app__posts_content {
   margin: 15px 0;
+  overflow-wrap: anywhere;
 }
 
 .app__posts_options {

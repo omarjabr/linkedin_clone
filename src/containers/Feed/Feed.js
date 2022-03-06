@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import {
   AccountCircleRounded,
@@ -11,6 +11,7 @@ import {
 import { FeedOptions, Posts } from "../../components";
 
 import "./Feed.css";
+import { db } from "../../backend/firebase";
 
 const feedOptionsList = [
   {
@@ -36,6 +37,23 @@ const feedOptionsList = [
 ];
 
 const Feed = () => {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    db.collection("posts").onSnapshot((snapshot) =>
+      setPosts(
+        snapshot.docs.map((doc) => ({
+          id: doc.id,
+          data: doc.data(),
+        }))
+      )
+    );
+  }, []);
+
+  const sendPost = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className="app__feed">
       <div className="app__feed_top">
@@ -50,7 +68,11 @@ const Feed = () => {
                 className="app__feed_top-input"
                 placeholder="Start a post"
               />
-              <button type="submit" className="app__feed_top-button">
+              <button
+                type="submit"
+                onClick={sendPost}
+                className="app__feed_top-button"
+              >
                 Send
               </button>
             </form>
@@ -75,7 +97,13 @@ const Feed = () => {
         <ArrowDropDownRounded />
       </div>
       <div className="app__feed_bottom">
-        <Posts />
+        {posts.map((post) => (
+          <Posts
+            name="Mohamad Omar Jabr"
+            description="Web Developer"
+            message="New Message"
+          />
+        ))}
       </div>
     </div>
   );
